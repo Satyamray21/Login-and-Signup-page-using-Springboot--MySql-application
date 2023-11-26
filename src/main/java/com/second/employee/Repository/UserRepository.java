@@ -9,6 +9,6 @@ import com.second.employee.Model.UserModel;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserModel, Integer> {
-    Optional<UserModel>findByUsernameandPassword(String username,String password);
+    Optional<UserModel> findByUsernameAndPassword(String username,String password);
 
 }

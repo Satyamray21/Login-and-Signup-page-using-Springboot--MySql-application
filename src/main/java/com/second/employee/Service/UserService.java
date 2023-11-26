@@ -34,7 +34,7 @@ public class UserService {
     }
     public UserModel authenticate(String username,String password)
     {
-        return userRepository.findByUsernameandPassword(username,password).orElse(null);
+        return userRepository.findByUsernameAndPassword(username,password).orElse(null);
 
     }
 }
